@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Origen · DEYEN — Lector Web Inmersivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;1,7..72,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"rgb(var(--surface-dim) / <alpha-value>)","on-secondary":"rgb(var(--on-secondary) / <alpha-value>)","on-tertiary-container":"rgb(var(--on-tertiary-container) / <alpha-value>)","on-secondary-fixed-variant":"rgb(var(--on-secondary-fixed-variant) / <alpha-value>)","secondary-fixed-dim":"rgb(var(--secondary-fixed-dim) / <alpha-value>)","surface-container-highest":"rgb(var(--surface-container-highest) / <alpha-value>)","on-surface":"rgb(var(--on-surface) / <alpha-value>)","tertiary-fixed-dim":"rgb(var(--tertiary-fixed-dim) / <alpha-value>)","primary-fixed-dim":"rgb(var(--primary-fixed-dim) / <alpha-value>)","surface-tint":"rgb(var(--surface-tint) / <alpha-value>)","secondary-fixed":"rgb(var(--secondary-fixed) / <alpha-value>)","on-primary-container":"rgb(var(--on-primary-container) / <alpha-value>)","on-background":"rgb(var(--on-background) / <alpha-value>)","secondary-container":"rgb(var(--secondary-container) / <alpha-value>)","outline-variant":"rgb(var(--outline-variant) / <alpha-value>)","inverse-surface":"rgb(var(--inverse-surface) / <alpha-value>)","tertiary-container":"rgb(var(--tertiary-container) / <alpha-value>)","primary-container":"rgb(var(--primary-container) / <alpha-value>)","on-error-container":"rgb(var(--on-error-container) / <alpha-value>)","on-primary":"rgb(var(--on-primary) / <alpha-value>)","inverse-on-surface":"rgb(var(--inverse-on-surface) / <alpha-value>)","on-primary-fixed-variant":"rgb(var(--on-primary-fixed-variant) / <alpha-value>)","on-tertiary-fixed":"rgb(var(--on-tertiary-fixed) / <alpha-value>)","on-surface-variant":"rgb(var(--on-surface-variant) / <alpha-value>)","on-tertiary":"rgb(var(--on-tertiary) / <alpha-value>)","error-container":"rgb(var(--error-container) / <alpha-value>)","surface-container-low":"rgb(var(--surface-container-low) / <alpha-value>)","surface-container-high":"rgb(var(--surface-container-high) / <alpha-value>)","on-secondary-container":"rgb(var(--on-secondary-container) / <alpha-value>)","on-secondary-fixed":"rgb(var(--on-secondary-fixed) / <alpha-value>)","surface-container-lowest":"rgb(var(--surface-container-lowest) / <alpha-value>)","surface-variant":"rgb(var(--surface-variant) / <alpha-value>)","on-primary-fixed":"rgb(var(--on-primary-fixed) / <alpha-value>)","tertiary-fixed":"rgb(var(--tertiary-fixed) / <alpha-value>)","error":"rgb(var(--error) / <alpha-value>)","surface-bright":"rgb(var(--surface-bright) / <alpha-value>)","outline":"rgb(var(--outline) / <alpha-value>)","primary-fixed":"rgb(var(--primary-fixed) / <alpha-value>)","tertiary":"rgb(var(--tertiary) / <alpha-value>)","secondary":"rgb(var(--secondary) / <alpha-value>)","primary":"rgb(var(--primary) / <alpha-value>)","surface-container":"rgb(var(--surface-container) / <alpha-value>)","on-tertiary-fixed-variant":"rgb(var(--on-tertiary-fixed-variant) / <alpha-value>)","surface":"rgb(var(--surface) / <alpha-value>)","on-error":"rgb(var(--on-error) / <alpha-value>)","inverse-primary":"rgb(var(--inverse-primary) / <alpha-value>)","background":"rgb(var(--background) / <alpha-value>)"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin":"1.25rem","space-md":"1rem","space-xl":"3rem","margin-tablet":"2.5rem","gutter":"1.5rem","gutter-desktop":"2.5rem","margin-desktop":"4rem","space-lg":"1.75rem"},"fontFamily":{"label-md":["Inter"],"display-xl-mobile":["Playfair Display"],"body-lg":["Literata"],"display-xl":["Playfair Display"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"body-md":["Literata"],"headline-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"body-sm":["Literata"],"label-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"500"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["19px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"400"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"26px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.06em","fontWeight":"500"}]}}}};</script>
+  <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface">
+  <div id="app-header"></div>
+
+  <div id="secure-reader-root">
+    <!-- TOP VIEWPORT PROGRESS SPINE -->
+    <div class="w-full bg-surface-container-lowest h-1 relative overflow-hidden z-40">
+      <div class="h-full bg-primary transition-all duration-300 ease-out" id="readingSpine" style="width: 34%;"></div>
+    </div>
+
+    <!-- COMMAND BAR -->
+    <section class="w-full bg-surface-container-low shadow-sm sticky top-16 z-30 px-margin md:px-margin-tablet lg:px-margin-desktop py-space-sm">
+      <div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-gutter">
+        <div class="flex items-center gap-space-md min-w-0">
+          <div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary shrink-0 shadow-sm">
+            <span class="material-symbols-outlined text-[20px]">auto_stories</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <span class="font-label-sm text-label-sm text-outline tracking-widest uppercase truncate">DEYEN · Códice Digital Exclusivo</span>
+            <div class="relative inline-block">
+              <button class="flex items-center gap-space-xs text-left group" onclick="toggleChapterMenu()">
+                <span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate" id="currentChapterLabel">Capítulo I: La Fractura del Silencio</span>
+                <span class="material-symbols-outlined text-[18px] text-primary transition-transform group-hover:translate-y-0.5">expand_more</span>
+              </button>
+              <div class="hidden absolute left-0 top-full mt-2 w-80 bg-surface-container-high rounded shadow-xl p-space-sm z-50" id="chapterMenu">
+                <div class="p-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Índice Canónico</div>
+                <ul class="flex flex-col gap-1 font-body-sm text-body-sm" id="chapterMenuList"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-space-sm">
+          <div class="flex items-center bg-surface-container rounded p-1 shadow-sm">
+            <button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" onclick="adjustFontSize(-1)" title="Disminuir cuerpo tipográfico"><span class="font-label-md text-label-md font-bold">A-</span></button>
+            <span class="w-px h-4 bg-outline-variant/30 mx-0.5"></span>
+            <button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" onclick="adjustFontSize(1)" title="Incrementar cuerpo tipográfico"><span class="font-label-md text-label-md font-bold">A+</span></button>
+          </div>
+          <div class="hidden sm:flex items-center bg-surface-container rounded p-1 shadow-sm">
+            <button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-primary shadow-sm" id="btn-theme-obsidian" onclick="setReaderTheme('obsidian')" title="Noche Obsidian"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button>
+            <button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="btn-theme-sepia" onclick="setReaderTheme('sepia')" title="Sepia Templo"><span class="material-symbols-outlined text-[18px]">menu_book</span></button>
+            <button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="btn-theme-pergamino" onclick="setReaderTheme('pergamino')" title="Pergamino Claro"><span class="material-symbols-outlined text-[18px]">light_mode</span></button>
+          </div>
+          <div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container shadow-sm">
+            <span class="material-symbols-outlined text-[16px] text-primary">timelapse</span>
+            <span class="font-label-md text-label-md text-primary font-semibold" id="progressIndicatorValue">34%</span>
+            <span class="font-label-sm text-label-sm text-outline">Leído</span>
+          </div>
+          <button class="w-9 h-9 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm" onclick="toggleReaderFullscreen()" title="Pantalla Completa Inmersiva">
+            <span class="material-symbols-outlined text-[20px]" id="fullscreenIcon">fullscreen</span>
+          </button>
+          <button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" onclick="openDownloadModal()">
+            <span class="material-symbols-outlined text-[18px]">lock</span>
+            <span class="hidden lg:inline">Descarga Híbrida</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECURITY NOTICE -->
+    <section class="w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xs">
+      <div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/60 rounded px-space-md py-2 shadow-sm">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+          <p class="font-label-sm text-label-sm text-on-surface-variant">
+            <strong class="text-secondary uppercase">Modo Lectura Segura:</strong> Selección de texto, copiado e impresión inhabilitadas para protección de derechos de autor.
+          </p>
+        </div>
+        <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          <span>Cifrado DRM Activo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- READING STAGE -->
+    <main class="w-full py-space-lg px-margin md:px-margin-tablet lg:px-margin-desktop relative overflow-hidden">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-primary/5 blur-3xl pointer-events-none -z-10"></div>
+      <div class="max-w-[1440px] mx-auto">
+        <div class="relative w-full rounded-xl bg-surface-container-low shadow-xl transition-colors duration-300 p-space-md md:p-space-lg lg:p-space-xl" id="bookSpreadContainer">
+          <!-- WATERMARK OVERLAY -->
+          <div class="absolute inset-0 pointer-events-none overflow-hidden z-20 flex flex-col justify-around opacity-[0.07] rotate-[-18deg] select-none scale-125" id="watermarkOverlay">
+            <div class="whitespace-nowrap font-label-md text-label-md uppercase tracking-[0.25em] text-on-surface text-center">—</div>
+            <div class="whitespace-nowrap font-label-md text-label-md uppercase tracking-[0.25em] text-on-surface text-center">—</div>
+            <div class="whitespace-nowrap font-label-md text-label-md uppercase tracking-[0.25em] text-on-surface text-center">—</div>
+            <div class="whitespace-nowrap font-label-md text-label-md uppercase tracking-[0.25em] text-on-surface text-center">—</div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop relative z-10">
+            <!-- LEFT SPREAD -->
+            <div class="lg:col-span-5 flex flex-col justify-between rounded-lg bg-surface-container p-space-md md:p-space-lg shadow-sm">
+              <div class="flex items-center justify-between pb-space-md">
+                <span class="font-label-sm text-label-sm text-outline tracking-widest uppercase" id="folioLeft">Folio 06 · Frontispicio</span>
+                <span class="font-label-sm text-label-sm text-primary uppercase font-medium">Tirada Canónica I</span>
+              </div>
+              <div class="flex flex-col items-center my-auto py-space-sm">
+                <div class="w-full max-w-[340px] rounded-lg overflow-hidden bg-surface-container-lowest shadow-xl group relative">
+                  <img alt="Portada de la obra El Origen por DEYEN" class="w-full h-auto object-cover rounded shadow-md transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd0aFCcCUZAj_VEK1NL99hD-FKPl9gWxJv7DG5rI9s9VKx6qb5QAf9UVOqC_U_3VoOiVJt9iycIzXoGiDGTjq-sEvFbYTr2MWjIjjA8mwMOxsIr2gT34mOD16KAEMvk-t9s2VWG7Y1SrG8AO3U-4yzSwbYqJPrzFqE0JGbsaAuYh5rjzki_17HcfC0zJdMwMSNrKo-bUMpoGm90pdFrsX29zG3PepA7vH8OieDNFQJFYT-_KnbSpKkuA"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">
+                    <span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Edición de Colección</span>
+                    <span class="material-symbols-outlined text-secondary text-[16px]">stars</span>
+                  </div>
+                </div>
+                <div class="mt-space-md text-center max-w-xs">
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-medium tracking-wide">EL ORIGEN</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tratado ontológico y narrativa trascendental. Sellado con geometría de proporción áurea y espiral de resonancia primigenia.</p>
+                </div>
+              </div>
+              <div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-outline">
+                <span>DEYEN ARCHIVES</span>
+                <span>PÁG. 06</span>
+              </div>
+            </div>
+            <!-- RIGHT SPREAD -->
+            <div class="lg:col-span-7 flex flex-col justify-between rounded-lg bg-surface-container-lowest p-space-md md:p-space-lg lg:p-space-xl shadow-sm">
+              <div class="flex items-center justify-between pb-space-md">
+                <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest" id="folioHeader">Capítulo I · La Fractura del Silencio</span>
+                <span class="font-label-sm text-label-sm text-outline" id="folioPage">PÁG. 07</span>
+              </div>
+              <div class="font-body-lg text-body-lg text-on-surface flex flex-col gap-space-md leading-relaxed my-auto" id="manuscriptTextBody"></div>
+              <div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-outline">
+                <span class="truncate" id="licenseLine">Licencia individual: —</span>
+                <span class="text-primary font-medium tracking-wider" id="licenseId">ID: —</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION RAILS -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-space-md mt-space-lg px-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <button class="px-space-md py-space-sm rounded bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider shadow-sm" onclick="stepChapter(-1)">
+              <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              <span>Folio Anterior</span>
+            </button>
+            <button class="px-space-md py-space-sm rounded bg-primary text-on-primary hover:bg-secondary transition-colors flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm" onclick="stepChapter(1)">
+              <span>Siguiente Folio</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+          </div>
+          <div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+            <div class="flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-[16px] text-primary">bookmark</span>
+              <span id="bookmarkLine">Marcador fijado en Folio 07</span>
+            </div>
+            <span class="text-outline-variant">•</span>
+            <span>Tiempo estimado de capítulo: 12 min</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- DOWNLOAD MODAL -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/85 backdrop-blur-md hidden p-margin" id="downloadModal">
+    <div class="w-full max-w-xl bg-surface-container-low rounded-xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      <div class="p-space-lg bg-surface-container flex items-center justify-between">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">enhanced_encryption</span></div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Descarga Híbrida Protegida</h3>
+            <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Protocolo Estampado Criptográfico</span>
+          </div>
+        </div>
+        <button class="w-8 h-8 rounded-full bg-surface-container-highest hover:bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeDownloadModal()"><span class="material-symbols-outlined text-[20px]">close</span></button>
+      </div>
+      <div class="p-space-lg flex flex-col gap-space-md">
+        <p class="font-body-md text-body-md text-on-surface-variant">Generación de archivo digital de alta fidelidad con estampado criptográfico infalsificable incrustado en cada pliego del volumen.</p>
+        <div class="rounded bg-surface-container p-space-md shadow-sm flex flex-col gap-space-xs">
+          <div class="flex justify-between items-center">
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Titular de Licencia</span>
+            <span class="font-label-sm text-label-sm text-secondary font-medium">Validado por Brevo DRM</span>
+          </div>
+          <p class="font-label-md text-label-md text-primary font-mono truncate" id="modalLicenseHolder">—</p>
+          <div class="flex justify-between items-center pt-space-xs text-outline font-label-sm text-label-sm">
+            <span class="font-mono" id="modalLicenseStamp">Firma Token: —</span>
+            <span>Vigencia: 48 Horas</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-space-sm text-center">
+          <div class="p-space-sm rounded bg-surface-container">
+            <span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Intentos Restantes</span>
+            <span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="downloadAttempts">3 / 3</span>
+          </div>
+          <div class="p-space-sm rounded bg-surface-container">
+            <span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Ventana de Enlace</span>
+            <span class="font-headline-sm text-headline-sm text-secondary font-bold">47h 59m</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-xs">
+          <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Seleccione el Formato de Lectura</span>
+          <label class="flex items-center justify-between p-space-sm rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+            <div class="flex items-center gap-space-sm">
+              <input checked="" class="accent-primary w-4 h-4" name="formatChoice" type="radio"/>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md text-on-surface font-medium">Edición Facsimilar PDF (300 DPI)</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Ideal para pantallas grandes, tabletas y archivo impreso.</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm text-primary font-mono">48 MB</span>
+          </label>
+          <label class="flex items-center justify-between p-space-sm rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+            <div class="flex items-center gap-space-sm">
+              <input class="accent-primary w-4 h-4" name="formatChoice" type="radio"/>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md text-on-surface font-medium">EPUB Reflowable 3.0 Canónico</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Optimizado para Kindle, Apple Books y lectores e-ink.</span>
+              </div>
+            </div>
+            <span class="font-label-sm text-label-sm text-primary font-mono">14 MB</span>
+          </label>
+        </div>
+      </div>
+      <div class="p-space-md bg-surface-container flex items-center justify-end gap-space-sm">
+        <button class="px-space-md py-space-sm rounded bg-surface-container-highest hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors" onclick="closeDownloadModal()">Cancelar</button>
+        <button class="px-space-md py-space-sm rounded bg-primary text-on-primary hover:bg-secondary font-label-md text-label-md uppercase tracking-wider font-semibold transition-colors flex items-center gap-space-xs shadow-md" id="btnDownloadConfirm" onclick="triggerCryptographicStamp()">
+          <span class="material-symbols-outlined text-[18px]">lock_open</span>
+          <span>Descargar PDF Estampado</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="app-footer"></div>
+
+  <script>
+    (function () {
+      'use strict';
+      var Store = window.DEYEN.Store;
+      var ui = window.DEYEN.ui;
+
+      var CHAPTERS = [
+        {
+          title: 'Capítulo I: La Fractura del Silencio', menu: 'Capítulo I: La Fractura del Silencio', folio: 7, progress: 34,
+          header: 'Capítulo I · La Fractura del Silencio',
+          canto: 'Canto Primero',
+          paragraphs: [
+            '<p class="text-justify"><span class="float-left font-display-xl text-display-xl font-headline-lg leading-none pr-space-sm pt-1 text-primary">E</span>n el principio no existía el eco, sino la resonancia del vacío. Una vibración latente que no buscaba ser escuchada, sino completada por la primera mirada consciente. Todo lo que luego llamamos materia fue primero una pausa: un pliegue dentro de la nada donde la luz descansaba antes de atreverse a viajar en línea recta.</p>',
+            '<p class="text-justify">Aquellos que cruzaron el umbral del templo primario comprendieron que el conocimiento no es acumulación, sino despojo. Quien ingresa en el sanctum debe dejar en el dintel sus certezas mecánicas. El lenguaje profano, hecho de prisas y utilidades fugaces, es incapaz de sostener la arquitectura del espíritu; requiere de un nuevo alfabeto grabado en el silencio de las proporciones.</p>',
+            '<div class="my-space-md p-space-md rounded bg-surface-container-low shadow-sm flex items-start gap-space-md"><span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">format_quote</span><blockquote class="font-headline-sm text-headline-sm italic text-primary-fixed-dim">“La geometría no describe el espacio: lo engendra al ser recordado por la mente despierta.”</blockquote></div>',
+            '<p class="text-justify">Así se abrió la primera fractura. El orden anterior, simétrico pero inerte, dio paso a una danza donde cada átomo reclamaba su propio testimonio. No hubo estruendo, sino un rumor apenas perceptible como el roce del pergamino antiguo bajo la yema de los dedos de un escriba ciego.</p>'
+          ]
+        },
+        {
+          title: 'Capítulo II: Geometría de la Conciencia', menu: 'Capítulo II: Geometría de la Conciencia', folio: 29, progress: 58,
+          header: 'Capítulo II · Geometría de la Conciencia',
+          canto: 'Canto Segundo',
+          paragraphs: [
+            '<p class="text-justify"><span class="float-left font-display-xl text-display-xl font-headline-lg leading-none pr-space-sm pt-1 text-primary">L</span>a conciencia no fue engendrada por la experiencia; es la experiencia quien se pliega ante la conciencia. Cada umbral que el pensamiento franquea deja una huella angular en la memoria, y esas huellas —vueltas espiral— son los contornos del tiempo que llamamos historia.</p>',
+            '<p class="text-justify">La mente despierta no colecciona fenómenos: los ornamenta con sentido. Observar es ya una forma de crear. Por eso civilizaciones enteras tienden a retornar a las mismas coordenadas: orbitan un fuego central cuya luz nunca alcanzan a mirar directamente.</p>',
+            '<div class="my-space-md p-space-md rounded bg-surface-container-low shadow-sm flex items-start gap-space-md"><span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">format_quote</span><blockquote class="font-headline-sm text-headline-sm italic text-primary-fixed-dim">“Recordar es reconstruir la curva exacta de un silencio ya consumido.”</blockquote></div>',
+            '<p class="text-justify">Comprender la espiral no implica escapar de ella, sino aprender a reconocer en qué punto del giro hemos despertado. El sabio no detiene la rotación: se sitúa en su centro y desde allí gobierna la propia mirada.</p>'
+          ]
+        },
+        {
+          title: 'Capítulo III: El Ecosistema Oculto', menu: 'Capítulo III: El Ecosistema Oculto', folio: 63, progress: 82,
+          header: 'Capítulo III · El Ecosistema Oculto',
+          canto: 'Canto Tercero',
+          paragraphs: [
+            '<p class="text-justify"><span class="float-left font-display-xl text-display-xl font-headline-lg leading-none pr-space-sm pt-1 text-primary">D</span>ebajo del ruido público late un ecosistema de símbolos que nadie declaró y todos habitamos. Monedas, fechas, títulos y máscaras conforman una selva vertical cuyas raíces atraviesan los calendarios y alimentan de olvido a quien no aprende a nombrarlas.</p>',
+            '<p class="text-justify">Navegar ese ecosistema exige un alfabeto distinto: la atención sostenida. Quien la domina deja de ser presa del estímulo y se convierte en jardinero de sus propios umbrales. La lucidez, entonces, no es un don: es una disciplina de poda.</p>',
+            '<div class="my-space-md p-space-md rounded bg-surface-container-low shadow-sm flex items-start gap-space-md"><span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">format_quote</span><blockquote class="font-headline-sm text-headline-sm italic text-primary-fixed-dim">“Nada te roba más tiempo que un estímulo que no elegiste.”</blockquote></div>',
+            '<p class="text-justify">Retirarse del torrente no es huida: es cartografía. El observador soberano dibuja el mapa del río para saber en qué meandro abrevar sin ser arrastrado.</p>'
+          ]
+        },
+        {
+          title: 'Capítulo IV: La Síntesis Inmutable', menu: 'Capítulo IV: La Síntesis Inmutable', folio: 95, progress: 100,
+          header: 'Capítulo IV · La Síntesis Inmutable',
+          canto: 'Canto Cuarto',
+          paragraphs: [
+            '<p class="text-justify"><span class="float-left font-display-xl text-display-xl font-headline-lg leading-none pr-space-sm pt-1 text-primary">C</span>uando el silencio original, la espiral del tiempo y el ecosistema de símbolos convergen en una sola mirada, nace la síntesis: no como fórmula, sino como estado. El ser se vuelve brújula de sí mismo.</p>',
+            '<p class="text-justify">Esta inmutabilidad no es rigidez; es fidelidad a la propia forma. El lienzo no cambia para contener cada color, sino que convierte en revelación cada color que lo visita. Así el observador recibe el mundo sin abdicar de su centro.</p>',
+            '<div class="my-space-md p-space-md rounded bg-surface-container-low shadow-sm flex items-start gap-space-md"><span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">format_quote</span><blockquote class="font-headline-sm text-headline-sm italic text-primary-fixed-dim">“Conocer el origen no devuelve la inocencia; otorga la gravísima responsabilidad de gobernar la propia mirada.”</blockquote></div>',
+            '<p class="text-justify">La obra termina donde el lector comienza. Lo que aquí se ha trazado no pretende ser la última palabra, sino la llave inicial de un archivo que cada conciencia continuará escribiendo a solas.</p>'
+          ]
+        }
+      ];
+
+      var currentScale = Store.getReader().scale || 1;
+      var currentTheme = Store.getReader().theme || 'obsidian';
+      var currentChapter = Store.getReader().chapter || 0;
+      var attemptsLeft = 3;
+
+      function watermarkText() {
+        var lic = Store.getLicense() || { name: '—', email: '—', id: '—' };
+        return 'Copia personal licenciada para: ' + lic.email + ' — ID: ' + lic.id + ' — COPIA CANÓNICA PROTEGIDA';
+      }
+
+      function applyWatermark() {
+        var lic = Store.getLicense() || { name: '—', email: '—', id: '—' };
+        document.getElementById('licenseLine').textContent = 'Licencia individual: ' + lic.email;
+        document.getElementById('licenseId').textContent = 'ID: ' + lic.id;
+        document.getElementById('modalLicenseHolder').textContent = lic.email;
+        document.getElementById('modalLicenseStamp').textContent = 'Firma Token: #' + lic.id + '-STAMP';
+        var txt = watermarkText();
+        var rows = document.querySelectorAll('#watermarkOverlay > div');
+        for (var i = 0; i < rows.length; i++) rows[i].textContent = txt;
+      }
+
+      function renderChapter() {
+        var ch = CHAPTERS[currentChapter];
+        var body = document.getElementById('manuscriptTextBody');
+        var html = '<div class="text-center py-space-sm">' +
+          '<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] block mb-space-xs">' + ch.canto + '</span>' +
+          '<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">' + ch.title.split(': ')[1] + '</h2>' +
+          '<div class="w-12 h-0.5 bg-primary/40 mx-auto mt-space-sm rounded-full"></div></div>' +
+          ch.paragraphs.join('');
+        body.innerHTML = html;
+        document.getElementById('currentChapterLabel').textContent = ch.title;
+        document.getElementById('folioHeader').textContent = ch.header;
+        document.getElementById('folioPage').textContent = 'PÁG. 0' + ch.folio;
+        document.getElementById('folioLeft').textContent = 'Folio 0' + (ch.folio - 1) + ' · Frontispicio';
+        document.getElementById('bookmarkLine').textContent = 'Marcador fijado en Folio 0' + ch.folio;
+        document.getElementById('readingSpine').style.width = ch.progress + '%';
+        document.getElementById('progressIndicatorValue').textContent = ch.progress + '%';
+
+        var items = document.querySelectorAll('#chapterMenuList li');
+        for (var i = 0; i < items.length; i++) {
+          var btn = items[i].querySelector('button');
+          btn.className = i === currentChapter
+            ? 'w-full text-left px-space-sm py-space-xs rounded bg-surface-container text-primary font-medium flex justify-between items-center'
+            : 'w-full text-left px-space-sm py-space-xs rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors flex justify-between items-center';
+        }
+        Store.setReader({ chapter: currentChapter, progress: ch.progress });
+        applyFontSize();
+      }
+
+      function buildChapterMenu() {
+        var list = document.getElementById('chapterMenuList');
+        var html = '';
+        CHAPTERS.forEach(function (ch, i) {
+          html += '<li><button class="w-full text-left px-space-sm py-space-xs rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors flex justify-between items-center" onclick="selectChapter(' + i + ')">' +
+            '<span class="truncate">' + ch.menu + '</span>' +
+            '<span class="font-label-sm text-label-sm text-outline">Fol. 0' + ch.folio + '</span></button></li>';
+        });
+        list.innerHTML = html;
+      }
+
+      window.toggleChapterMenu = function () {
+        document.getElementById('chapterMenu').classList.toggle('hidden');
+      };
+      window.selectChapter = function (i) {
+        currentChapter = i;
+        document.getElementById('chapterMenu').classList.add('hidden');
+        renderChapter();
+      };
+      window.stepChapter = function (dir) {
+        currentChapter = (currentChapter + dir + CHAPTERS.length) % CHAPTERS.length;
+        renderChapter();
+      };
+
+      window.adjustFontSize = function (delta) {
+        currentScale += delta * 0.1;
+        if (currentScale < 0.8) currentScale = 0.8;
+        if (currentScale > 1.4) currentScale = 1.4;
+        Store.setReader({ scale: currentScale });
+        applyFontSize();
+      };
+
+      function applyFontSize() {
+        var textContainer = document.getElementById('manuscriptTextBody');
+        textContainer.style.fontSize = (19 * currentScale) + 'px';
+        textContainer.style.lineHeight = (32 * currentScale) + 'px';
+      }
+
+      window.setReaderTheme = function (theme) {
+        var bookSpread = document.getElementById('bookSpreadContainer');
+        var textBody = document.getElementById('manuscriptTextBody');
+        var bO = document.getElementById('btn-theme-obsidian');
+        var bS = document.getElementById('btn-theme-sepia');
+        var bP = document.getElementById('btn-theme-pergamino');
+        [bO, bS, bP].forEach(function (b) {
+          if (b) b.className = 'w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors';
+        });
+        if (theme === 'obsidian') {
+          bookSpread.className = 'relative w-full rounded-xl bg-surface-container-low shadow-xl transition-colors duration-300 p-space-md md:p-space-lg lg:p-space-xl';
+          textBody.className = 'font-body-lg text-body-lg text-on-surface flex flex-col gap-space-md leading-relaxed my-auto';
+          bO.className = 'w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-primary shadow-sm';
+        } else if (theme === 'sepia') {
+          bookSpread.className = 'relative w-full rounded-xl bg-[#1e1914] shadow-xl transition-colors duration-300 p-space-md md:p-space-lg lg:p-space-xl';
+          textBody.className = 'font-body-lg text-body-lg text-[#ecd7bd] flex flex-col gap-space-md leading-relaxed my-auto';
+          bS.className = 'w-8 h-8 rounded flex items-center justify-center bg-[#2c221a] text-[#ffd699] shadow-sm';
+        } else {
+          bookSpread.className = 'relative w-full rounded-xl bg-[#2b2723] shadow-xl transition-colors duration-300 p-space-md md:p-space-lg lg:p-space-xl';
+          textBody.className = 'font-body-lg text-body-lg text-[#f4eee4] flex flex-col gap-space-md leading-relaxed my-auto';
+          bP.className = 'w-8 h-8 rounded flex items-center justify-center bg-[#3d3731] text-[#fedeb2] shadow-sm';
+        }
+        currentTheme = theme;
+        Store.setReader({ theme: theme });
+      };
+
+      window.toggleReaderFullscreen = function () {
+        var root = document.getElementById('secure-reader-root');
+        var icon = document.getElementById('fullscreenIcon');
+        if (!document.fullscreenElement) {
+          if (root.requestFullscreen) {
+            root.requestFullscreen().then(function () { icon.textContent = 'fullscreen_exit'; }).catch(function (e) { ui.showToast('No fue posible activar pantalla completa.', 'error'); });
+          }
+        } else {
+          document.exitFullscreen().then(function () { icon.textContent = 'fullscreen'; });
+        }
+      };
+
+      window.openDownloadModal = function () {
+        document.getElementById('downloadAttempts').textContent = attemptsLeft + ' / 3';
+        document.getElementById('downloadModal').classList.remove('hidden');
+      };
+      window.closeDownloadModal = function () {
+        document.getElementById('downloadModal').classList.add('hidden');
+      };
+
+      window.triggerCryptographicStamp = function () {
+        var btn = document.getElementById('btnDownloadConfirm');
+        if (attemptsLeft <= 0) { ui.showToast('Alcanzó el límite de descargas estampadas. Contacte a editorial@deyen.mx.', 'error'); return; }
+        var lic = Store.getLicense() || {};
+        var ch = CHAPTERS[currentChapter];
+        var original = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Estampando Token...</span>';
+        setTimeout(function () {
+          btn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-green-400">check_circle</span><span>Descarga Generada</span>';
+          attemptsLeft -= 1;
+          Store.setReader({ downloads: (Store.getReader().downloads || 0) + 1 });
+          (function deliver() {
+            var title = 'DEYEN_ElOrigen_Estampado_' + new Date().toISOString().slice(0, 10) + '.txt';
+            var stamp = '#DEYEN-ESTAMPADO\nTitular: ' + (lic.name || '—') + '\nCorreo: ' + (lic.email || '—') + '\nID: ' + (lic.id || '—') + '\nFecha: ' + new Date().toLocaleString('es-MX') + '\nSección: ' + ch.title + '\n\nEste documento es un ejemplar de DEMOSTRACIÓN de la obra «El Origen» de DEYEN, estampado con watermark nominal único para su titular. La distribución sin licencia viola los derechos reservados de la obra.\n\n«' + ch.title.split(': ')[1] + '»\n\n' + ch.paragraphs.join('\n\n').replace(/<[^>]+>/g, ' ');
+            var blob = new Blob([stamp], { type: 'text/plain;charset=utf-8' });
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = title;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(function () { URL.revokeObjectURL(a.href); }, 3000);
+          })();
+          setTimeout(function () {
+            btn.innerHTML = original;
+            btn.disabled = false;
+            closeDownloadModal();
+          }, 1600);
+        }, 1400);
+      };
+
+      /* Security hardening */
+      document.addEventListener('keydown', function (e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 's' || e.key === 'c' || e.key === 'u' || e.key === 'a')) {
+          e.preventDefault();
+        }
+      });
+      document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      document.addEventListener('copy', function (e) { e.preventDefault(); });
+
+      function init() {
+        currentChapter = Number(Store.getReader().chapter || 0);
+        currentScale = Number(Store.getReader().scale || 1);
+        currentTheme = Store.getReader().theme || 'obsidian';
+        buildChapterMenu();
+        setReaderTheme(currentTheme);
+        renderChapter();
+        applyWatermark();
+        if (Store.getReader().downloads) {
+          attemptsLeft = Math.max(0, 3 - (Number(Store.getReader().downloads) || 0));
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>

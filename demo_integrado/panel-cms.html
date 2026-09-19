@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Origen · DEYEN — Panel Editorial CMS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;1,7..72,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"rgb(var(--surface-dim) / <alpha-value>)","on-secondary":"rgb(var(--on-secondary) / <alpha-value>)","on-tertiary-container":"rgb(var(--on-tertiary-container) / <alpha-value>)","on-secondary-fixed-variant":"rgb(var(--on-secondary-fixed-variant) / <alpha-value>)","secondary-fixed-dim":"rgb(var(--secondary-fixed-dim) / <alpha-value>)","surface-container-highest":"rgb(var(--surface-container-highest) / <alpha-value>)","on-surface":"rgb(var(--on-surface) / <alpha-value>)","tertiary-fixed-dim":"rgb(var(--tertiary-fixed-dim) / <alpha-value>)","primary-fixed-dim":"rgb(var(--primary-fixed-dim) / <alpha-value>)","surface-tint":"rgb(var(--surface-tint) / <alpha-value>)","secondary-fixed":"rgb(var(--secondary-fixed) / <alpha-value>)","on-primary-container":"rgb(var(--on-primary-container) / <alpha-value>)","on-background":"rgb(var(--on-background) / <alpha-value>)","secondary-container":"rgb(var(--secondary-container) / <alpha-value>)","outline-variant":"rgb(var(--outline-variant) / <alpha-value>)","inverse-surface":"rgb(var(--inverse-surface) / <alpha-value>)","tertiary-container":"rgb(var(--tertiary-container) / <alpha-value>)","primary-container":"rgb(var(--primary-container) / <alpha-value>)","on-error-container":"rgb(var(--on-error-container) / <alpha-value>)","on-primary":"rgb(var(--on-primary) / <alpha-value>)","inverse-on-surface":"rgb(var(--inverse-on-surface) / <alpha-value>)","on-primary-fixed-variant":"rgb(var(--on-primary-fixed-variant) / <alpha-value>)","on-tertiary-fixed":"rgb(var(--on-tertiary-fixed) / <alpha-value>)","on-surface-variant":"rgb(var(--on-surface-variant) / <alpha-value>)","on-tertiary":"rgb(var(--on-tertiary) / <alpha-value>)","error-container":"rgb(var(--error-container) / <alpha-value>)","surface-container-low":"rgb(var(--surface-container-low) / <alpha-value>)","surface-container-high":"rgb(var(--surface-container-high) / <alpha-value>)","on-secondary-container":"rgb(var(--on-secondary-container) / <alpha-value>)","on-secondary-fixed":"rgb(var(--on-secondary-fixed) / <alpha-value>)","surface-container-lowest":"rgb(var(--surface-container-lowest) / <alpha-value>)","surface-variant":"rgb(var(--surface-variant) / <alpha-value>)","on-primary-fixed":"rgb(var(--on-primary-fixed) / <alpha-value>)","tertiary-fixed":"rgb(var(--tertiary-fixed) / <alpha-value>)","error":"rgb(var(--error) / <alpha-value>)","surface-bright":"rgb(var(--surface-bright) / <alpha-value>)","outline":"rgb(var(--outline) / <alpha-value>)","primary-fixed":"rgb(var(--primary-fixed) / <alpha-value>)","tertiary":"rgb(var(--tertiary) / <alpha-value>)","secondary":"rgb(var(--secondary) / <alpha-value>)","primary":"rgb(var(--primary) / <alpha-value>)","surface-container":"rgb(var(--surface-container) / <alpha-value>)","on-tertiary-fixed-variant":"rgb(var(--on-tertiary-fixed-variant) / <alpha-value>)","surface":"rgb(var(--surface) / <alpha-value>)","on-error":"rgb(var(--on-error) / <alpha-value>)","inverse-primary":"rgb(var(--inverse-primary) / <alpha-value>)","background":"rgb(var(--background) / <alpha-value>)"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin":"1.25rem","space-md":"1rem","space-xl":"3rem","margin-tablet":"2.5rem","gutter":"1.5rem","gutter-desktop":"2.5rem","margin-desktop":"4rem","space-lg":"1.75rem"},"fontFamily":{"label-md":["Inter"],"display-xl-mobile":["Playfair Display"],"body-lg":["Literata"],"display-xl":["Playfair Display"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"body-md":["Literata"],"headline-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"body-sm":["Literata"],"label-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"500"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["19px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"400"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"26px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.06em","fontWeight":"500"}]}}}};</script>
+  <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes shake{10%,90%{transform:translateX(-2px)}20%,80%{transform:translateX(3px)}30%,50%,70%{transform:translateX(-5px)}40%,60%{transform:translateX(5px)}}.animate-shake{animation:shake .4s ease-in-out;}</style>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface">
+  <div id="app-header"></div>
+
+  <!-- LOGIN GATE -->
+  <div class="fixed inset-0 z-[200] flex items-center justify-center bg-surface-container-lowest/90 backdrop-blur-md p-margin" id="loginScreen">
+    <div class="w-full max-w-md relative rounded-lg bg-surface-container shadow-2xl border border-outline-variant/40 p-space-lg flex flex-col gap-space-md">
+      <button onclick="loginToggleTheme()" class="absolute top-4 right-4 w-9 h-9 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high flex items-center justify-center transition-colors" title="Cambiar tema clara/oscura" aria-label="Cambiar tema clara/oscura">
+        <span class="material-symbols-outlined text-[18px]" id="loginThemeIcon">light_mode</span>
+      </button>
+
+      <div class="flex items-center gap-space-md">
+        <div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-[30px]">shield</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Protocolo Editorial Seguro</span>
+          <h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Panel Editorial CMS</h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Acceso restringido al operador acreditado</p>
+        </div>
+      </div>
+
+      <form id="loginForm" class="flex flex-col gap-space-sm" onsubmit="loginCMS(); return false;">
+        <label class="flex flex-col gap-1">
+          <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Correo del operador</span>
+          <input id="loginEmail" autocomplete="username" class="w-full px-space-md py-space-sm rounded bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="admin@deyen.mx" type="email" required/>
+        </label>
+        <label class="flex flex-col gap-1">
+          <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Contraseña</span>
+          <input id="loginPass" autocomplete="current-password" class="w-full px-space-md py-space-sm rounded bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="••••••••••" type="password" required/>
+        </label>
+        <p class="font-label-sm text-label-sm text-error min-h-[1.2em] hidden" id="loginError">Credenciales inválidas. Verifique e intente de nuevo.</p>
+        <button class="w-full mt-space-xs py-3 rounded bg-primary text-on-primary hover:bg-secondary font-label-md text-label-md uppercase tracking-widest font-semibold transition-colors shadow flex items-center justify-center gap-space-xs" type="submit">
+          <span class="material-symbols-outlined text-[18px]">login</span>
+          <span>Ingresar al Panel</span>
+        </button>
+      </form>
+
+      <div class="p-space-md rounded bg-surface-container-low border border-outline-variant/40 flex flex-col gap-space-xs">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">vpn_key</span>Credenciales de demostración</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant font-mono">admin@deyen.mx / origen2026</p>
+      </div>
+
+      <a class="flex items-center justify-center gap-space-xs font-label-sm text-label-sm text-outline hover:text-primary transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+        <span>Volver al sitio público</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg flex flex-col gap-space-lg">
+
+    <!-- HEADER STATUS STRIP -->
+    <section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container shadow-md">
+      <div class="flex items-center gap-space-md">
+        <div class="relative w-12 h-12 rounded bg-surface-container-high flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-[26px]">shield</span>
+          <span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-space-xs flex-wrap">
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Protocolo Editorial Seguro</span>
+            <span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary uppercase font-semibold">Producción v2.6.4</span>
+          </div>
+          <h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight" id="sessionTitle">Sesión activa: DEYEN Editorial Root</h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Sincronización bidireccional: PayPal Webhook • API Estafeta Courier MX • Brevo Sincronizado</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-space-sm w-full lg:w-auto justify-end flex-wrap">
+        <div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+          <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+          <span>SSL 256-Bit</span>
+        </div>
+        <button id="notifBtn" class="relative flex items-center justify-center w-9 h-9 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">notifications</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] font-bold flex items-center justify-center" id="notifBadge">3</span>
+        </button>
+        <button onclick="logoutCMS()" class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-low text-on-surface-variant hover:text-primary font-label-md text-label-md uppercase tracking-wider font-semibold transition-colors">
+          <span class="material-symbols-outlined text-[18px]">logout</span>
+          <span>Cerrar Sesión</span>
+        </button>
+        <button onclick="resetDemo()" class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-low text-on-surface-variant hover:text-primary font-label-md text-label-md uppercase tracking-wider font-semibold transition-colors">
+          <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+          <span>Reiniciar Demo</span>
+        </button>
+        <a class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm hover:bg-secondary transition-colors" href="index.html">
+          <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+          <span>Ver Sitio en Vivo</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="p-space-md rounded bg-surface-container-high shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hidden" id="notif-toast">
+      <div class="flex items-center gap-space-sm">
+        <span class="material-symbols-outlined text-secondary text-[22px]">info</span>
+        <p class="font-body-sm text-body-sm text-on-surface">
+          <strong class="text-primary">Notificación Operativa:</strong> <span id="notifText"></span>
+        </p>
+      </div>
+      <button class="font-label-sm text-label-sm uppercase tracking-wider text-outline hover:text-on-surface" onclick="document.getElementById('notif-toast').classList.add('hidden')">Descartar</button>
+    </div>
+
+    <!-- KPIs -->
+    <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+      <div class="relative overflow-hidden p-space-lg rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary/5 blur-2xl pointer-events-none"></div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Ingresos Brutos</span>
+            <span class="p-1.5 rounded bg-surface-container-low text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">payments</span></span>
+          </div>
+          <div class="mt-space-sm">
+            <span class="font-display-xl-mobile text-display-xl-mobile font-semibold text-primary" id="kpi-revenue">$0</span>
+            <span class="font-label-md text-label-md text-on-surface-variant font-semibold"> MXN</span>
+          </div>
+        </div>
+        <div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-secondary font-medium"><span class="material-symbols-outlined text-[14px]">trending_up</span> +18.4%</span>
+          <span id="kpi-orders">0 órdenes vía PayPal</span>
+        </div>
+      </div>
+      <div class="relative overflow-hidden p-space-lg rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary/5 blur-2xl pointer-events-none"></div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Inventario Físico</span>
+            <span class="p-1.5 rounded bg-surface-container-low text-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">auto_stories</span></span>
+          </div>
+          <div class="mt-space-sm flex items-baseline gap-space-xs">
+            <span class="font-display-xl-mobile text-display-xl-mobile font-semibold text-on-surface" id="kpi-stock">0</span>
+            <span class="font-headline-sm text-headline-sm text-outline" id="kpi-stock-max">/ 0</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Ejemplares</span>
+          </div>
+        </div>
+        <div class="mt-space-md flex flex-col gap-space-xs">
+          <div class="w-full h-1.5 rounded-full bg-surface-container-low overflow-hidden"><div class="h-full rounded-full bg-primary transition-all" id="kpi-stock-bar" style="width:0%"></div></div>
+          <div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+            <span>Almacén Central CDMX</span>
+            <span class="text-secondary font-medium" id="kpi-stock-alert">Alerta a los 50</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative overflow-hidden p-space-lg rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary/5 blur-2xl pointer-events-none"></div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Guías Estafeta</span>
+            <span class="p-1.5 rounded bg-surface-container-low text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">local_shipping</span></span>
+          </div>
+          <div class="mt-space-sm flex items-baseline gap-space-xs">
+            <span class="font-display-xl-mobile text-display-xl-mobile font-semibold text-primary" id="kpi-guides">0</span>
+            <span class="font-label-md text-label-md text-on-surface-variant font-medium">En tránsito activo</span>
+          </div>
+        </div>
+        <div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary"></span> <span id="kpi-delivered">0</span> entregadas hoy</span>
+          <span class="text-outline">Tiempo prom. 2.1 días</span>
+        </div>
+      </div>
+      <div class="relative overflow-hidden p-space-lg rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+        <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary/5 blur-2xl pointer-events-none"></div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Lectores Registrados</span>
+            <span class="p-1.5 rounded bg-surface-container-low text-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">mark_email_read</span></span>
+          </div>
+          <div class="mt-space-sm flex items-baseline gap-space-xs">
+            <span class="font-display-xl-mobile text-display-xl-mobile font-semibold text-on-surface" id="kpi-readers">0</span>
+            <span class="font-label-md text-label-md text-on-surface-variant font-medium">Contactos Brevo</span>
+          </div>
+        </div>
+        <div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-primary font-medium"><span class="material-symbols-outlined text-[14px]">insights</span> 68% Open Rate</span>
+          <span class="text-outline">Lista 'El Origen'</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDERS TABLE -->
+    <section class="flex flex-col gap-space-md p-space-lg rounded-lg bg-surface-container shadow-md">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+        <div>
+          <div class="flex items-center gap-space-xs">
+            <span class="w-2 h-2 rounded-full bg-primary"></span>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Módulo 3 • Despacho &amp; Flujo de Pagos</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface font-normal mt-1">Gestión de Pedidos &amp; Logística Estafeta</h2>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Control centralizado de transacciones procesadas, timbrado de envíos y certificados de compra.</p>
+        </div>
+        <div class="flex items-center gap-space-sm w-full lg:w-auto flex-wrap">
+          <div class="relative flex-1 sm:w-72">
+            <input class="w-full pl-9 pr-3 py-2 rounded bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-colors" id="orderSearch" placeholder="Buscar por ID o cliente..."/>
+            <span class="material-symbols-outlined text-[18px] text-outline absolute left-2.5 top-2.5">search</span>
+          </div>
+          <button class="flex items-center gap-space-xs px-space-md py-2 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-wider font-semibold transition-colors" onclick="triggerCsvExport()">
+            <span class="material-symbols-outlined text-[18px]">file_download</span>
+            <span>Exportar a CSV / Excel</span>
+          </button>
+        </div>
+      </div>
+      <div class="w-full overflow-x-auto rounded bg-surface-container-low">
+        <table class="w-full text-left font-body-sm text-body-sm border-collapse min-w-[960px]">
+          <thead>
+            <tr class="bg-surface-container-high text-outline uppercase font-label-sm text-label-sm tracking-wider">
+              <th class="py-space-sm px-space-md">ID Pedido</th>
+              <th class="py-space-sm px-space-md">Fecha</th>
+              <th class="py-space-sm px-space-md">Cliente • Correo</th>
+              <th class="py-space-sm px-space-md">Formato</th>
+              <th class="py-space-sm px-space-md text-right">Total MXN</th>
+              <th class="py-space-sm px-space-md">Pago</th>
+              <th class="py-space-sm px-space-md">Estado Logístico</th>
+              <th class="py-space-sm px-space-md">Guía Estafeta</th>
+              <th class="py-space-sm px-space-md text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y-0 text-on-surface" id="ordersTableBody"></tbody>
+        </table>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs font-label-sm text-label-sm text-outline">
+        <span id="ordersSummary">—</span>
+        <div class="flex items-center gap-1">
+          <button class="px-2 py-1 rounded bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest" onclick="ui.showToast('Vista de paginación en modo demo.','info')">Anterior</button>
+          <span class="px-2 py-1 rounded bg-primary text-on-primary font-bold">1</span>
+          <button class="px-2 py-1 rounded bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest" onclick="ui.showToast('Vista de paginación en modo demo.','info')">Siguiente</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICES / STOCK + BREVO -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+      <div class="lg:col-span-5 flex flex-col gap-space-md p-space-lg rounded-lg bg-surface-container shadow-md">
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Catálogo Oficial</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Precios &amp; Stock Físico</h3>
+          </div>
+          <span class="material-symbols-outlined text-primary text-[24px]">tune</span>
+        </div>
+        <div class="flex items-center gap-space-md p-space-sm rounded bg-surface-container-low">
+          <div class="w-16 h-20 rounded bg-surface-container-highest flex-shrink-0 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[30px]">menu_book</span></div>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-[17px] leading-tight text-primary font-medium">DEYEN • El Origen</span>
+            <span class="font-label-sm text-label-sm text-outline uppercase">Primera Edición Impresa • 2026</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant mt-1">ISBN 978-607-99120-0-1</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm pt-space-xs">
+          <label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider flex justify-between">
+            <span>Precio Libro Físico (MXN)</span><span class="text-secondary font-normal">Incluye estuche protector</span>
+          </label>
+          <div class="relative">
+            <span class="absolute left-3 top-2.5 font-label-md text-label-md text-primary font-bold">$</span>
+            <input class="w-full pl-8 pr-16 py-2 rounded bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold focus:outline-none focus:bg-surface-container-high transition-colors" id="pricePhysical" type="number"/>
+            <span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline">MXN</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider flex justify-between">
+            <span>Precio Libro Digital (EPUB/PDF)</span><span class="text-secondary font-normal">Sello dinámico activado</span>
+          </label>
+          <div class="relative">
+            <span class="absolute left-3 top-2.5 font-label-md text-label-md text-primary font-bold">$</span>
+            <input class="w-full pl-8 pr-16 py-2 rounded bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold focus:outline-none focus:bg-surface-container-high transition-colors" id="priceDigital" type="number"/>
+            <span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline">MXN</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider flex justify-between">
+            <span>Existencias Almacén Central</span><span class="text-primary font-bold" id="stockLabel">0 Uds. Restantes</span>
+          </label>
+          <div class="flex items-center gap-space-sm">
+            <input class="flex-1 px-space-sm py-2 rounded bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold focus:outline-none focus:bg-surface-container-high transition-colors" id="stockInput" type="number"/>
+            <button class="px-space-md py-2 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-wider font-semibold transition-colors" onclick="updateStock()">Actualizar</button>
+          </div>
+          <span class="font-label-sm text-label-sm text-secondary hidden" id="stockFeedback"></span>
+        </div>
+        <div class="pt-space-xs">
+          <button class="w-full py-space-sm rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-semibold shadow hover:bg-secondary transition-colors" onclick="saveAllPrices()">Guardar Cambios de Tarifa</button>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 flex flex-col gap-space-md p-space-lg rounded-lg bg-surface-container shadow-md">
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Módulo 5 • Activos &amp; Audiencia</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Gestor de Manuscrito &amp; Brevo CRM</h3>
+          </div>
+          <span class="material-symbols-outlined text-secondary text-[24px]">hub</span>
+        </div>
+        <div class="flex flex-col gap-space-sm p-space-md rounded bg-surface-container-low">
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col">
+              <span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider">Cargar Versión de Manuscrito</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant">Archivos base para inyección de watermark dinámico anti-piratería.</span>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-outline">v2.4 Compilada</span>
+          </div>
+          <div class="mt-space-sm p-space-md rounded border-0 bg-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-secondary text-[32px]">picture_as_pdf</span>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md text-on-surface font-medium">DEYEN_El_Origen_Master_2026.pdf</span>
+                <span class="font-label-sm text-label-sm text-outline">42.8 MB • Última firma: 18 Octubre</span>
+              </div>
+            </div>
+            <label class="cursor-pointer px-space-md py-1.5 rounded bg-primary text-on-primary hover:bg-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider transition-colors inline-block text-center">
+              <span>Reemplazar Archivo</span>
+              <input class="hidden" type="file" onchange="ui.showToast('Nuevo archivo recibido. Motor de índices recompilando con marca de agua activa.','info');"/>
+            </label>
+          </div>
+          <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+            <span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+            <span>Motor activo: El watermark estampará el RFC/Email y fecha de compra en los márgenes de cada descarga.</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm p-space-md rounded bg-surface-container-low">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-space-xs">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              <span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Brevo (Sendinblue) API v3</span>
+            </div>
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-medium">Conexión Saludable</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Los lectores que adquieren la edición física o digital se suscriben automáticamente a la lista exclusiva de comunicados y capítulos preliminares.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-space-xs">
+            <div class="flex flex-col gap-1 p-space-sm rounded bg-surface-container-high">
+              <span class="font-label-sm text-label-sm text-outline uppercase">Contactos sincronizados</span>
+              <div class="flex items-baseline justify-between">
+                <span class="font-headline-sm text-[20px] text-on-surface font-semibold" id="brevo-count">0</span>
+                <span class="font-label-sm text-label-sm text-secondary">Lista #DEYEN-READERS</span>
+              </div>
+              <div class="w-full h-1 rounded-full bg-surface-container-low overflow-hidden mt-1"><div class="h-full rounded-full bg-secondary transition-all" id="brevo-bar" style="width:0%"></div></div>
+            </div>
+            <div class="flex flex-col gap-1 p-space-sm rounded bg-surface-container-high">
+              <span class="font-label-sm text-label-sm text-outline uppercase">Tasa de Entrega &amp; Apertura</span>
+              <div class="flex items-baseline justify-between">
+                <span class="font-headline-sm text-[20px] text-primary font-semibold">99.2% / 68%</span>
+                <span class="font-label-sm text-label-sm text-primary">Óptimo</span>
+              </div>
+              <div class="w-full h-1 rounded-full bg-surface-container-low overflow-hidden mt-1"><div class="h-full rounded-full bg-primary" style="width: 99.2%;"></div></div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-space-xs flex-wrap gap-space-sm">
+            <span class="font-label-sm text-label-sm text-outline font-mono">List ID: #DEYEN-READERS-2026</span>
+            <button class="flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium uppercase tracking-wider transition-colors" onclick="exportBrevoSubscribers()">
+              <span class="material-symbols-outlined text-[16px] text-secondary">download</span>
+              <span>Exportar Lista de Lectores (.csv)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TRACKING MODAL -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-sm hidden p-space-md" id="trackingModal">
+    <div class="w-full max-w-lg p-space-lg rounded-lg bg-surface-container shadow-2xl flex flex-col gap-space-md">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-space-xs">
+          <span class="material-symbols-outlined text-secondary text-[24px]">local_shipping</span>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Rastreo Estafeta Courier MX</h4>
+        </div>
+        <button class="text-outline hover:text-on-surface btn-close-modal"><span class="material-symbols-outlined text-[20px]">close</span></button>
+      </div>
+      <div class="p-space-sm rounded bg-surface-container-low flex flex-col gap-1">
+        <div class="flex justify-between font-label-sm text-label-sm text-outline"><span>Número de Guía</span><span>Destinatario</span></div>
+        <div class="flex justify-between font-label-md text-label-md text-primary font-bold">
+          <span class="font-mono" id="modalTrackingCode">—</span>
+          <span class="text-on-surface font-normal" id="modalRecipientName">—</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-space-md py-space-sm" id="modalTimeline"></div>
+      <div class="flex items-center justify-end gap-space-sm pt-space-xs">
+        <button class="px-space-md py-2 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider btn-close-modal">Cerrar</button>
+        <a class="px-space-md py-2 rounded bg-primary text-on-primary hover:bg-secondary font-label-md text-label-md font-semibold uppercase tracking-wider transition-colors" id="externalEstafetaLink" href="https://www.estafeta.com" target="_blank">Portal Oficial Estafeta</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SELLO MODAL (DIGITAL) -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-sm hidden p-space-md" id="selloModal">
+    <div class="w-full max-w-lg p-space-lg rounded-lg bg-surface-container shadow-2xl flex flex-col gap-space-md">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-space-xs">
+          <span class="material-symbols-outlined text-primary text-[24px]">enhanced_encryption</span>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Certificado Criptográfico</h4>
+        </div>
+        <button class="text-outline hover:text-on-surface btn-close-sello"><span class="material-symbols-outlined text-[20px]">close</span></button>
+      </div>
+      <div class="rounded bg-surface-container-low p-space-md flex flex-col gap-1">
+        <div class="flex justify-between font-label-sm text-label-sm text-outline"><span>Licencia</span><span>Timestamp</span></div>
+        <div class="flex justify-between font-label-md text-label-md text-primary font-bold">
+          <span class="truncate pr-4" id="selloLicense">—</span>
+          <span class="text-on-surface font-normal" id="selloTimestamp">—</span>
+        </div>
+      </div>
+      <div class="p-space-sm rounded bg-surface-container flex items-start gap-space-sm">
+        <span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">verified_user</span>
+        <p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">Watermark dinámico emitido por el motor Brevo DRM. El archivo descargado lleva estampado nominal del titular y es verificable contra el registro canónico de la editorial.</p>
+      </div>
+      <div class="flex items-center justify-end gap-space-sm pt-space-xs">
+        <button class="px-space-md py-2 rounded bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider btn-close-sello">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="app-footer"></div>
+
+  <script>
+    (function () {
+      'use strict';
+      var Store = window.DEYEN.Store;
+      var ui = window.DEYEN.ui;
+
+      var ADMIN_EMAIL = 'admin@deyen.mx';
+      var ADMIN_PASS = 'origen2026';
+      var ADMIN_NAME = 'Administración Editorial DEYEN';
+
+      function isAuthed() {
+        var s = Store.getSession();
+        return !!(s && s.loggedIn);
+      }
+
+      function syncLoginThemeIcon() {
+        var lb = document.getElementById('loginThemeIcon');
+        if (lb) lb.textContent = ui.currentTheme() === 'light' ? 'dark_mode' : 'light_mode';
+      }
+
+      function showLogin() {
+        document.getElementById('loginScreen').classList.add('flex');
+        document.getElementById('loginScreen').classList.remove('hidden');
+        document.getElementById('loginError').classList.add('hidden');
+        document.getElementById('loginPass').value = '';
+        syncLoginThemeIcon();
+      }
+
+      function hideLogin() {
+        document.getElementById('loginScreen').classList.add('hidden');
+        document.getElementById('loginScreen').classList.remove('flex');
+      }
+
+      window.loginToggleTheme = function () {
+        ui.toggleTheme();
+        syncLoginThemeIcon();
+      };
+
+      window.loginCMS = function () {
+        var email = (document.getElementById('loginEmail').value || '').trim().toLowerCase();
+        var pass = document.getElementById('loginPass').value || '';
+        var err = document.getElementById('loginError');
+        if (email === ADMIN_EMAIL && pass === ADMIN_PASS) {
+          Store.setSession({ loggedIn: true, email: email, name: ADMIN_NAME, at: new Date().toISOString() });
+          hideLogin();
+          var st = document.getElementById('sessionTitle');
+          if (st) st.textContent = 'Sesión activa: ' + ADMIN_NAME + ' • ' + email;
+          renderKpis();
+          renderTable();
+          ui.showToast('Sesión iniciada: ' + email);
+        } else {
+          err.classList.remove('hidden');
+          err.classList.add('animate-shake');
+          document.getElementById('loginPass').value = '';
+          document.getElementById('loginPass').focus();
+          setTimeout(function () { err.classList.remove('animate-shake'); }, 500);
+        }
+      };
+
+      window.logoutCMS = function () {
+        Store.clearSession();
+        showLogin();
+        ui.showToast('Sesión cerrada correctamente.', 'info');
+      };
+
+      var LOGISTICS = {
+        en_transito: { label: 'En Tránsito', icon: 'pulse', cls: 'text-secondary', dot: 'bg-secondary animate-pulse' },
+        preparacion: { label: 'En Preparación', icon: '', cls: 'text-outline', dot: 'bg-outline' },
+        entregado: { label: 'Entregado', icon: 'task_alt', cls: 'text-on-surface', dot: '' },
+        sello_emitido: { label: 'Sello Emitido', icon: 'verified', cls: 'text-primary', dot: '' }
+      };
+
+      function esc(s) { return ui.esc(s); }
+      function fmtMXN(n) { return '$' + Number(n || 0).toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+
+      function fmtDateTag(iso) {
+        if (!iso) return '—';
+        var d = new Date(iso);
+        if (isNaN(d.getTime())) return esc(iso);
+        return esc(Store.fmtDate(iso));
+      }
+
+      function sortedOrders() {
+        return Store.getOrders().slice().sort(function (a, b) { return (b.id || '').localeCompare(a.id || ''); });
+      }
+
+      function renderKpis() {
+        var orders = Store.getOrders();
+        var cat = Store.getCatalog();
+        var paid = orders.filter(function (o) { return o.payment === 'PayPal Aprobado'; });
+        var revenue = paid.reduce(function (s, o) { return s + (Number(o.total) || 0); }, 0);
+        var enTransito = orders.filter(function (o) { return o.logistics === 'en_transito'; }).length;
+        var entregados = orders.filter(function (o) { return o.logistics === 'entregado'; }).length;
+        var readers = Store.getLeads().length + paid.length;
+
+        document.getElementById('kpi-revenue').textContent = '$' + revenue.toLocaleString('es-MX', { maximumFractionDigits: 0 });
+        document.getElementById('kpi-orders').textContent = paid.length + ' órdenes vía PayPal';
+        document.getElementById('kpi-stock').textContent = cat.stock;
+        document.getElementById('kpi-stock-max').textContent = '/ ' + cat.maxStock;
+        document.getElementById('kpi-stock-bar').style.width = Math.min(100, (cat.stock / cat.maxStock) * 100) + '%';
+        document.getElementById('kpi-stock-alert').textContent = cat.stock <= 50 ? '⚠ Stock Crítico' : 'Alerta a los 50';
+        document.getElementById('kpi-guides').textContent = enTransito;
+        document.getElementById('kpi-delivered').textContent = entregados;
+        document.getElementById('kpi-readers').textContent = readers;
+
+        document.getElementById('pricePhysical').value = cat.physical;
+        document.getElementById('priceDigital').value = cat.digital;
+        document.getElementById('stockInput').value = cat.stock;
+        document.getElementById('stockLabel').textContent = cat.stock + ' Uds. Restantes';
+        document.getElementById('brevo-count').textContent = readers;
+        document.getElementById('brevo-bar').style.width = Math.min(100, (readers / 500) * 100) + '%';
+
+        var notif = document.getElementById('notifText');
+        if (notif) notif.textContent = 'Se registraron ' + paid.length + ' compras. El motor de sellado con watermark dinámico procesó las descargas de manuscrito digital de manera exitosa.';
+      }
+
+      function badgeFor(order) {
+        var fmt = order.format === 'physical'
+          ? '<span class="material-symbols-outlined text-[14px] text-secondary">menu_book</span> Físico'
+          : '<span class="material-symbols-outlined text-[14px] text-primary">devices</span> Digital (EPUB/PDF)';
+        var base = 'inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm';
+        return '<span class="' + base + '">' + fmt + '</span>';
+      }
+
+      function logisticsCell(order) {
+        var lg = LOGISTICS[order.logistics] || LOGISTICS.preparacion;
+        var inner;
+        if (lg.dot) {
+          inner = '<span class="w-2 h-2 rounded-full ' + lg.dot + '"></span> ' + lg.label;
+        } else if (order.format === 'digital') {
+          inner = '<span class="material-symbols-outlined text-[14px] text-primary">verified</span> ' + lg.label;
+        } else {
+          inner = '<span class="material-symbols-outlined text-[14px] text-secondary">task_alt</span> ' + lg.label;
+        }
+        return '<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm font-semibold ' + lg.cls + '">' + inner + '</span>';
+      }
+
+      function guideCell(order) {
+        var g = order.guide;
+        if (order.format === 'digital') {
+          return '<span class="text-outline font-label-sm text-label-sm font-mono">N/A (Descarga Digital)</span>';
+        }
+        if (!g) {
+          return '<span class="text-outline font-label-sm text-label-sm italic">Pendiente timbrar</span>';
+        }
+        return '<button class="font-label-sm text-label-sm text-primary hover:text-secondary flex items-center gap-1 font-mono" onclick="copyTracking(\'' + esc(g) + '\')" title="Copiar guía"><span>' + esc(g) + '</span><span class="material-symbols-outlined text-[14px]">content_copy</span></button>';
+      }
+
+      function actionsCell(order) {
+        if (order.logistics === 'preparacion' && order.format === 'physical') {
+          return '<button class="px-space-sm py-1 rounded bg-primary text-on-primary hover:bg-secondary font-label-sm text-label-sm transition-colors uppercase font-semibold flex items-center gap-1 mx-auto" onclick="generateEstafetaGuide(\'' + esc(order.id) + '\')"><span class="material-symbols-outlined text-[14px]">local_shipping</span><span>Generar Guía</span></button>';
+        }
+        if (order.format === 'digital') {
+          return '<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors uppercase font-medium" onclick="auditSello(\'' + esc(order.id) + '\')">Auditar Sello</button>';
+        }
+        var label = order.logistics === 'entregado' ? 'Comprobante' : 'Ver Rastreo';
+        return '<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors uppercase font-medium" onclick="openTrackingModal(\'' + esc(order.id) + '\')">' + label + '</button>';
+      }
+
+      function rowHtml(order) {
+        return '<tr class="hover:bg-surface-container transition-colors">' +
+          '<td class="py-space-md px-space-md font-label-md text-label-md text-primary font-semibold">#' + esc(order.id) + '</td>' +
+          '<td class="py-space-md px-space-md text-on-surface-variant font-label-sm text-label-sm">' + fmtDateTag(order.date || order.createdAt) + '</td>' +
+          '<td class="py-space-md px-space-md"><div class="flex flex-col"><span class="font-medium text-on-surface">' + esc(order.name) + '</span><span class="font-label-sm text-label-sm text-outline">' + esc(order.email) + '</span></div></td>' +
+          '<td class="py-space-md px-space-md">' + badgeFor(order) + '</td>' +
+          '<td class="py-space-md px-space-md text-right font-semibold text-primary">' + fmtMXN(order.total) + '</td>' +
+          '<td class="py-space-md px-space-md"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[14px]">check_circle</span> PayPal Aprobado</span></td>' +
+          '<td class="py-space-md px-space-md">' + logisticsCell(order) + '</td>' +
+          '<td class="py-space-md px-space-md">' + guideCell(order) + '</td>' +
+          '<td class="py-space-md px-space-md text-center">' + actionsCell(order) + '</td>' +
+          '</tr>';
+      }
+
+      function renderTable() {
+        var term = (document.getElementById('orderSearch').value || '').toLowerCase().trim();
+        var orders = sortedOrders().filter(function (o) {
+          if (!term) return true;
+          return (o.id + o.name + o.email).toLowerCase().indexOf(term) !== -1;
+        });
+        var body = document.getElementById('ordersTableBody');
+        body.innerHTML = orders.length
+          ? orders.map(rowHtml).join('')
+          : '<tr><td colspan="9" class="py-space-lg px-space-md text-center text-on-surface-variant">Sin resultados para el criterio de búsqueda.</td></tr>';
+        document.getElementById('ordersSummary').textContent = 'Mostrando ' + orders.length + ' de ' + Store.getOrders().length + ' pedidos registrados';
+      }
+
+      document.getElementById('orderSearch').addEventListener('input', renderTable);
+
+      window.openTrackingModal = function (id) {
+        var order = Store.getOrders().filter(function (o) { return o.id === id; })[0];
+        if (!order) return;
+        document.getElementById('modalTrackingCode').textContent = order.guide || 'Por asignar';
+        document.getElementById('modalRecipientName').textContent = order.name;
+        document.getElementById('externalEstafetaLink').href = 'https://www.estafeta.com/Rastreo/rastreo-por-guia?guia=' + (order.guide || '');
+        var events = (order.events || []).slice().reverse();
+        document.getElementById('modalTimeline').innerHTML = events.length
+          ? events.map(function (ev) {
+              return '<div class="flex items-start gap-space-md"><div class="w-4 h-4 rounded-full bg-secondary mt-1 flex-shrink-0"></div>' +
+                '<div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">' + esc(ev.title) + '</span>' +
+                '<span class="font-body-sm text-body-sm text-on-surface-variant">' + esc(ev.place) + '</span>' +
+                '<span class="font-label-sm text-label-sm text-outline">' + esc(ev.time) + '</span></div></div>';
+            }).join('')
+          : '<div class="text-center text-on-surface-variant font-body-sm text-body-sm">Sin eventos registrados en la línea de tiempo.</div>';
+        document.getElementById('trackingModal').classList.remove('hidden');
+      };
+
+      window.auditSello = function (id) {
+        var order = Store.getOrders().filter(function (o) { return o.id === id; })[0];
+        var lic = Store.getLicense() || {};
+        document.getElementById('selloLicense').textContent = order ? order.email : lic.email || '—';
+        document.getElementById('selloTimestamp').textContent = Store.fmtDate(order ? order.date : null);
+        document.getElementById('selloModal').classList.remove('hidden');
+      };
+
+      function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+      }
+
+      document.querySelectorAll('.btn-close-modal').forEach(function (b) {
+        b.addEventListener('click', function () { closeModal('trackingModal'); });
+      });
+      document.querySelectorAll('.btn-close-sello').forEach(function (b) {
+        b.addEventListener('click', function () { closeModal('selloModal'); });
+      });
+
+      window.closeTrackingModal = function () { closeModal('trackingModal'); };
+      window.closeSelloModal = function () { closeModal('selloModal'); };
+
+      window.copyTracking = function (code) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code).then(function () {
+            ui.showToast('Código de guía copiado al portapapeles: ' + code);
+          });
+        } else {
+          ui.showToast('Código de guía: ' + code);
+        }
+      };
+
+      window.generateEstafetaGuide = function (orderId) {
+        var guide = Store.newGuide();
+        Store.updateOrder(orderId, {
+          guide: guide,
+          logistics: 'en_transito',
+          events: (Store.getOrders().filter(function (o) { return o.id === orderId; })[0].events || []).concat([
+            { title: 'Guía timbrada en API Estafeta', place: 'Etiqueta lista para impresión térmica (ZPL)', time: Store.fmtDate() },
+            { title: 'Paquete Recolectado en Bodega DEYEN', place: 'Almacén Central • Ciudad de México', time: Store.fmtDate() }
+          ])
+        });
+        renderTable();
+        renderKpis();
+        ui.showToast('Guía generada con éxito para ' + orderId + ': ' + guide);
+      };
+
+      window.updateStock = function () {
+        var v = document.getElementById('stockInput').value;
+        var cat = Store.setStock(v);
+        var fb = document.getElementById('stockFeedback');
+        fb.textContent = 'Inventario actualizado a ' + cat.stock + ' ejemplares en almacén y reflejado en la tienda pública.';
+        fb.classList.remove('hidden');
+        renderKpis();
+        ui.showToast('Stock actualizado a ' + cat.stock + ' unidades.');
+        setTimeout(function () { fb.classList.add('hidden'); }, 4000);
+      };
+
+      window.saveAllPrices = function () {
+        var cat = Store.getCatalog();
+        cat.physical = Math.max(1, Number(document.getElementById('pricePhysical').value) || cat.physical);
+        cat.digital = Math.max(1, Number(document.getElementById('priceDigital').value) || cat.digital);
+        Store.saveCatalog(cat);
+        renderKpis();
+        ui.showToast('Tarifas actualizadas: Físico $' + cat.physical + ' · Digital $' + cat.digital + ' MXN. La tienda refleja los nuevos valores.');
+      };
+
+      window.triggerCsvExport = function () {
+        var rows = sortedOrders();
+        var head = 'ID,Fecha,Cliente,Correo,Formato,Subtotal,Envio,Total_MXN,Estado_Pago,Logistica,Guia_Estafeta';
+        var lines = rows.map(function (o) {
+          return [o.id, (o.date || '').slice(0, 10), o.name, o.email, o.format, o.subtotal, o.shipping, o.total, o.payment, o.logistics, o.guide || 'PENDIENTE'].join(',');
+        });
+        var csv = [head].concat(lines).join('\n');
+        var blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'DEYEN_Pedidos_Editorial_' + new Date().toISOString().slice(0, 10) + '.csv';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(function () { URL.revokeObjectURL(a.href); }, 3000);
+        ui.showToast('Exportación CSV generada con ' + rows.length + ' pedidos.');
+      };
+
+      window.exportBrevoSubscribers = function () {
+        var leads = Store.getLeads();
+        var orders = Store.getOrders();
+        var seen = {};
+        var lines = [];
+        leads.forEach(function (l) {
+          var k = String(l.email).toLowerCase();
+          if (!seen[k]) { seen[k] = 1; lines.push([l.email, (l.date || '').slice(0, 10), l.origen || 'Muestra Gratis', '72%'].join(',')); }
+        });
+        orders.forEach(function (o) {
+          var k = String(o.email).toLowerCase();
+          if (!seen[k]) {
+            seen[k] = 1;
+            lines.push([o.email, (o.date || '').slice(0, 10), 'Compra_' + o.format, '85%'].join(','));
+          } else {
+            lines.push([o.email, (o.date || '').slice(0, 10), 'Compra_' + o.format + ' / Lead', '85%'].join(','));
+          }
+        });
+        var csv = ['Email,Fecha_Registro,Origen,Tasa_Apertura'].concat(lines).join('\n');
+        var blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'DEYEN_Suscriptores_Brevo_' + new Date().toISOString().slice(0, 10) + '.csv';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(function () { URL.revokeObjectURL(a.href); }, 3000);
+        ui.showToast('Lista Brevo exportada: ' + lines.length + ' contactos.');
+      };
+
+      window.resetDemo = function () {
+        Store.resetDemo();
+        renderKpis();
+        renderTable();
+        ui.showToast('Demo reiniciado a su estado canónico de fábrica.', 'info');
+      };
+
+      document.getElementById('notifBtn').addEventListener('click', function () {
+        var t = document.getElementById('notif-toast');
+        t.classList.toggle('hidden');
+      });
+
+      function init() {
+        if (!isAuthed()) {
+          showLogin();
+          return;
+        }
+        hideLogin();
+        var sess = Store.getSession();
+        var st = document.getElementById('sessionTitle');
+        if (st) st.textContent = 'Sesión activa: ' + (sess && sess.name ? sess.name + ' • ' + sess.email : 'DEYEN Editorial Root');
+        renderKpis();
+        renderTable();
+        var notified = Store.getOrders().length >= 4;
+        if (notified) {
+          document.getElementById('notifBadge').textContent = Math.max(1, Store.getOrders().length - 4 + 3);
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>
